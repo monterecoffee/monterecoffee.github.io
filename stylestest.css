@@ -11,20 +11,8 @@ body, html {
   position: relative;
   color: white;
   font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
 }  
-
-@media only screen and (max-width: 599px) {
-  h1 {
-    font-size: 8em;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 3em;
-  }
-}
-
 
 .topleft {
   position: absolute;
@@ -52,6 +40,31 @@ hr {
 }
 
 
+@media only screen and (max-width: 599px) {
+  .bgimg {
+    background-image: url('assets/test.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 50px;
+  }  
+}
+
+@media only screen and (min-width: 600px) {
+  .bgimg {
+    background-image: url('assets/test.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }  
+}
 
 
 
