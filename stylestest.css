@@ -20,6 +20,11 @@ body, html {
   left: 16px;
 }
 
+.topleft img {
+  width: 100%
+}
+
+
 .bottomleft {
   position: absolute;
   bottom: 0;
@@ -51,6 +56,9 @@ hr {
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
   }  
+  .topleft img {
+    width: 50%
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -64,6 +72,10 @@ hr {
     font-family: "Courier New", Courier, monospace;
     font-size: 25px;
   }  
+  .topleft img {
+    width: 100%
+  }
+  
 }
 
 
