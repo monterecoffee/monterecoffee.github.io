@@ -3,30 +3,26 @@ body, html {
   margin: 0;
 }
 
+.bgimg {
+  background-image: url('assets/test.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}  
+
 @media only screen and (max-width: 599px) {
-  .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 50px;
-  }  
+  h1 {
+    font-size: 8em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }  
+  h1 {
+    font-size: 3em;
+  }
 }
 
 
