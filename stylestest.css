@@ -70,6 +70,23 @@ hr {
     position: relative;
     color: white;
     font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+  }  
+  .topleft img {
+    width: 87.5%
+  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .bgimg {
+    background-image: url('assets/test.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
     font-size: 25px;
   }  
   .topleft img {
