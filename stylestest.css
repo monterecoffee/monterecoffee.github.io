@@ -20,11 +20,6 @@ body, html {
   left: 24px;
 }
 
-.topleft img {
-  width: 100%
-}
-
-
 .bottomleft {
   position: absolute;
   bottom: 0;
