@@ -10,7 +10,8 @@ body, html {
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  /*font-family: "Courier New", Courier, monospace; */
+  font-family: "Bebas Neue", regular;
   font-size: 25px;
 }  
 
@@ -53,7 +54,8 @@ hr {
     background-size: cover;
     position: relative;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+    /*font-family: "Courier New", Courier, monospace; */
+    font-family: "Bebas Neue", regular;
     font-size: 15px;
   }  
   .topleft img {
@@ -69,7 +71,8 @@ hr {
     background-size: cover;
     position: relative;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+    /*font-family: "Courier New", Courier, monospace; */
+    font-family: "Bebas Neue", regular;
     font-size: 25px;
   }  
   .topleft img {
