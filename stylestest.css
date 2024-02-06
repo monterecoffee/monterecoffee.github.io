@@ -51,10 +51,11 @@ hr {
     position: relative;
     color: white;
     font-family: "Courier New", Courier, monospace;
-    font-size: 10px;
+    font-size: 16px;
   }  
   .topleft img {
-    
+    width: 65px;
+    height: 65px;
   }
 }
 
@@ -67,11 +68,11 @@ hr {
     position: relative;
     color: white;
     font-family: "Courier New", Courier, monospace;
-    font-size: 15px;
+    font-size: 20px;
   }  
   .topleft img {
-    
-  }
+    width: 75px;
+    height: 75px;  }
   
 }
 
@@ -87,8 +88,8 @@ hr {
     font-size: 25px;
   }  
   .topleft img {
-    
-  }
+    width: 85px;
+    height: 85px;  }
   
 }
 
