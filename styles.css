@@ -10,21 +10,17 @@ body, html {
   background-size: cover;
   position: relative;
   color: white;
-  /*font-family: "Courier New", Courier, monospace; */
-  font-family: "Bebas Neue", regular;
+  font-family: "Courier New", Courier, monospace;
   font-size: 25px;
 }  
 
 .topleft {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  left: 10px;
 }
-
-.topleft img {
-  width: 100%
-}
-
 
 .bottomleft {
   position: absolute;
@@ -54,12 +50,12 @@ hr {
     background-size: cover;
     position: relative;
     color: white;
-    /*font-family: "Courier New", Courier, monospace; */
-    font-family: "Bebas Neue", regular;
-    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
   }  
   .topleft img {
-    width: 75%
+    width: 65px;
+    height: 65px;
   }
 }
 
@@ -71,13 +67,29 @@ hr {
     background-size: cover;
     position: relative;
     color: white;
-    /*font-family: "Courier New", Courier, monospace; */
-    font-family: "Bebas Neue", regular;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+  }  
+  .topleft img {
+    width: 75px;
+    height: 75px;  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .bgimg {
+    background-image: url('assets/test.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
     font-size: 25px;
   }  
   .topleft img {
-    width: 100%
-  }
+    width: 85px;
+    height: 85px;  }
   
 }
 
