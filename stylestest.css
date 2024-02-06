@@ -16,8 +16,10 @@ body, html {
 
 .topleft {
   position: absolute;
-  top: 24px;
-  left: 0px;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  left: 10px;
 }
 
 .bottomleft {
