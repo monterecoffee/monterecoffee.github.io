@@ -1,18 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body, html {
   height: 100%;
   margin: 0;
 }
 
 .bgimg {
+  background-color: #6D412D;
   background-image: url('assets/test.jpg');
+  background-image: url('assets/image.png');
+  background-color: rgba(43, 25, 18, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+
+  background-blend-mode: color;
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  color:blueviolet;
+  font-family: "Courier New", Courier, monospace;  
+  font-size: 42px;
 }  
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  margin-bottom: 8%;
+}
 
 .topleft {
   position: absolute;
@@ -39,20 +54,18 @@ body, html {
 hr {
   margin: auto;
   width: 40%;
+  padding-top: 0%;
 }
 
 
 @media only screen and (max-width: 749px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 16px;
+    font-size: 20px;
   }  
+  .title {
+    font-size: 66px;
+    margin-bottom: 8%;
+  }
   .topleft img {
     width: 65px;
     height: 65px;
@@ -61,15 +74,13 @@ hr {
 
 @media only screen and (min-width: 750px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
+   
+    font-size: 24px;
   }  
+  .title {
+    font-size: 80px;
+    margin-bottom: 8%;
+  }
   .topleft img {
     width: 75px;
     height: 75px;  }
@@ -78,15 +89,13 @@ hr {
 
 @media only screen and (min-width: 900px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
+    
+    font-size: 30px;
   }  
+  .title {
+    font-size: 100px;
+    margin-bottom: 8%;
+  }
   .topleft img {
     width: 85px;
     height: 85px;  }

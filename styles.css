@@ -7,6 +7,11 @@ body, html {
 
 .bgimg {
   background-color: #6D412D;
+  background-image: url('assets/test.jpg');
+  background-color: rgba(43, 25, 18, 0.9);
+  background-color: rgba(255, 255, 255, 0.0);
+  -webkit-filter: blur(0px);
+  background-blend-mode: color;
   height: 100%;
   background-position: center;
   background-size: cover;
