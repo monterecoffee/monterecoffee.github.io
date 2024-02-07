@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body, html {
   height: 100%;
   margin: 0;
 }
 
 .bgimg {
-  background-image: url('assets/test.jpg');
+  background-color: #6D412D;
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;  
+  font-size: 42px;
 }  
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  margin-bottom: 8%;
+}
 
 .topleft {
   position: absolute;
@@ -39,19 +47,13 @@ body, html {
 hr {
   margin: auto;
   width: 40%;
+  padding-top: 0%;
 }
 
 
 @media only screen and (max-width: 749px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 16px;
+    font-size: 20px;
   }  
   .topleft img {
     width: 65px;
@@ -61,14 +63,8 @@ hr {
 
 @media only screen and (min-width: 750px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
+   
+    font-size: 24px;
   }  
   .topleft img {
     width: 75px;
@@ -78,14 +74,8 @@ hr {
 
 @media only screen and (min-width: 900px) {
   .bgimg {
-    background-image: url('assets/test.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
+    
+    font-size: 30px;
   }  
   .topleft img {
     width: 85px;
