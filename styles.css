@@ -6,9 +6,7 @@ body, html {
 }
 
 .bgimg {
-  background-color: #6D412D;
   background-image: url('assets/test.jpg');
-  background-blend-mode: color;
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -16,7 +14,7 @@ body, html {
   color: white;
   font-family: "Courier New", Courier, monospace;  
   font-size: 42px;
-  opacity: 50%;
+  opacity: 100%;
 }  
 
 .title {
