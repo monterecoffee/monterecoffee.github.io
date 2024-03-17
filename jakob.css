@@ -3,19 +3,28 @@
 body, html {
   height: 100%;
   margin: 0;
-}
-
-.bgimg {
   background-color: black;
-  font-family: "Courier New", Courier, monospace;  
-  font-size: 42px;
-  opacity: 100%;
-}  
+  color: white;
+
+}
 
 .title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 100px;
+  font-size: 150px;
+  color: white;
+}
+
+.subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.main {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
   margin-bottom: 8%;
+  color: white;
 }
 
 .topleft {
@@ -42,7 +51,7 @@ body, html {
 
 hr {
   margin: auto;
-  width: 40%;
+  width: 50%;
   padding-top: 0%;
 }
 
