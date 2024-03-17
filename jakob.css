@@ -6,12 +6,7 @@ body, html {
 }
 
 .bgimg {
-  background-image: url('assets/test.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
+  background-color: black;
   font-family: "Courier New", Courier, monospace;  
   font-size: 42px;
   opacity: 100%;
