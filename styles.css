@@ -5,6 +5,15 @@ body, html {
   margin: 0;
 }
 
+
+p:hover {
+  color: red;
+}
+
+#signup:hover {
+  color: rgb(255, 255, 255);
+}
+
 .bgimg {
   background-image: url('assets/test.jpg');
   height: 100%;
@@ -21,6 +30,7 @@ body, html {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 100px;
   margin-bottom: 8%;
+  line-height: 80%;
 }
 
 .topleft {
