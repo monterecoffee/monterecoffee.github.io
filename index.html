@@ -11,7 +11,7 @@
   <link rel='preconnect' href='https://fonts.googleapis.com'>
   <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet' type='text/css'> 
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
@@ -20,17 +20,24 @@
   <div class="topleft">
     <img src = 'assets/mainlogo.png' width="85px" height="600px">
   </div>
+
   <div class="middle">
     <h1 class="title">Montere</h1>
-    <p id="signup"> <a href="https://montere.ca/sheet" target="ext" style="color: #ffffff; text-decoration: underline;" >join our waitlist</a> </p>
+    <hr>
     
+    <form method="post" action="https://script.google.com/macros/s/AKfycby6spMwyzbCdDTNB59UVyKOfmxtvJw1kNiW3YMOeYKFtE0JXu6LcXn6z2bH6tbFgZ9k/exec" name="contact-form">
+      <input type="email" name="your-email" placeholder="Email">
+      <input type="submit" value="Join Waitlist" id="submit">
+    </form>
+
   </div>
+
   <div class="bottomleft">
     <p></p>
   </div>
 </div>
 
+
+	<script src="sheet.js"></script>
 </body>
 </html>
-
-<!--deploy would ya-->

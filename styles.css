@@ -5,15 +5,6 @@ body, html {
   margin: 0;
 }
 
-
-p:hover {
-  color: red;
-}
-
-#signup:hover {
-  color: rgb(255, 255, 255);
-}
-
 .bgimg {
   background-image: url('assets/test.jpg');
   height: 100%;
@@ -28,9 +19,6 @@ p:hover {
 
 .title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 100px;
-  margin-bottom: 8%;
-  line-height: 80%;
 }
 
 .topleft {
@@ -55,11 +43,50 @@ p:hover {
   text-align: center;
 }
 
+
 hr {
   margin: auto;
   width: 40%;
   padding-top: 0%;
 }
+
+
+/*Waitlist Form Components*/
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+input[type="email"] {
+  width: 120px; /* Adjusted width for text input */
+  padding: 8px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  border: none;
+  background-color: #6d412de6;
+  color: white;
+  width: 90px; /* Adjusted width for submit button */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: -10px;
+}
+
+#submit:hover {
+  background-color: #6d412d;
+}
+
+#submit:active {
+transform: translateY(2px);
+}
+
+
+/*Screen Size Adjustment*/
 
 
 @media only screen and (max-width: 749px) {
@@ -68,7 +95,7 @@ hr {
   }  
   .title {
     font-size: 58px;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
   }
   .topleft img {
     width: 65px;
@@ -83,7 +110,7 @@ hr {
   }  
   .title {
     font-size: 80px;
-    margin-bottom: 8%;
+    margin-bottom: 2%;
   }
   .topleft img {
     width: 75px;
@@ -98,7 +125,7 @@ hr {
   }  
   .title {
     font-size: 92px;
-    margin-bottom: 8%;
+    margin-bottom: 0%;
   }
   .topleft img {
     width: 85px;
