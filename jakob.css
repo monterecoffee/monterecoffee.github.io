@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+:root{
+  --small: 0.5;
+  --medium: 0.8;
+}
 
 html, body {
   width: 100%;
   height:100%;
 }
+
+/*BACKGROUND SHIT*/
 
 body {
     background: linear-gradient(120deg, #7d7d7d, #000000, #262626, #6d412de6);
@@ -22,6 +30,8 @@ body {
         background-position: 0% 50%;
     }
 }
+
+/*BACKGROUND SHIT OVER*/
 
 .title {
   font-family: 'Bebas Neue', sans-serif;
@@ -75,9 +85,36 @@ body {
 
 hr {
   margin: auto;
-  width: 50%;
+  width: 40%;
   padding-top: 0%;
 }
+
+/*typing animation*/
+.typewriter h1 {
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #6d412de6; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6d412de6 }
+}
+
 
 /*Waitlist Form Components*/
 
@@ -103,7 +140,7 @@ input[type="email"] {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  margin-left: -10px;
+  margin-left: 10px;
 }
 
 #submit:hover {
@@ -114,33 +151,6 @@ input[type="email"] {
 transform: translateY(2px);
 }
 
-op/* HTML: <div class="loader"></div> */
-.loader {
-  width: 40px;
-  height: 60px;
-  position: relative;
-}
-.loader::before,
-.loader::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #514b82;
-  clip-path: polygon(0 0,100% 0, 100% 67%,50% 67%,50% 34%,0 34%);
-  animation: sp7 2s infinite;
-}
-.loader::after {
-  --s:-1,-1;
-}
-@keyframes sp7 {
-    0%,
-    10%  {transform:scale(var(--s,1)) translate(0,0)        rotate(0deg)}
-    33%  {transform:scale(var(--s,1)) translate(0,-20px)    rotate(0deg)}
-    66%  {transform:scale(var(--s,1)) translate(10px,-20px) rotate(-90deg)}
-    90%,
-    100% {transform:scale(var(--s,1)) translate(10px,-10px) rotate(-90deg)}
-}
-
 /*scaling stuff DONT DELETE*/
 
 @media only screen and (max-width: 749px) {
@@ -149,22 +159,30 @@ op/* HTML: <div class="loader"></div> */
   }  
   .title {
     font-size: 58px;
-    margin-bottom: 8%;
+    margin-bottom: -20px;
   }
   .topleft img {
     width: 65px;
     height: 65px;
   }
+
+  #submit{
+    width: 120px; 
+    margin-left: 0px;
+  }
+
+  #no_mobile {
+    display:none;
+  }
 }
 
 @media only screen and (min-width: 750px) {
   .bgimg {
-   
     font-size: 24px;
   }  
   .title {
     font-size: 80px;
-    margin-bottom: 8%;
+    margin-bottom: 4px;
   }
   .topleft img {
     width: 75px;
@@ -174,12 +192,11 @@ op/* HTML: <div class="loader"></div> */
 
 @media only screen and (min-width: 900px) {
   .bgimg {
-    
     font-size: 30px;
   }  
   .title {
     font-size: 92px;
-    margin-bottom: 8%;
+    margin-bottom: 0px;
   }
   .topleft img {
     width: 85px;
