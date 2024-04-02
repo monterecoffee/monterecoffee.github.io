@@ -1,76 +1,147 @@
-SCSSResult Skip Results Iframe
-EDIT ON
-@mixin dots($count) {
-  $text-shadow: ();
-  @for $i from 0 through $count {
-    $text-shadow: $text-shadow,
-                 (-.5+(random()) * 3) + em
-                 (-.5+(random()) * 3) + em
-                 7px
-                 hsla(random() * 360, 100%, 50%,.9);
-  }
-  text-shadow: $text-shadow;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-html {
-  font: 5vmin/1.3 Serif;
-  overflow: hidden;
-  background: #123;
+.bgimg {
+  background-image: url('assets/test.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;  
+  font-size: 42px;
+  opacity: 100%;
+}  
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-body, head {
-  display: block;
-  font-size: 52px;
-  color: transparent;
+.topleft {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  left: 10px;
 }
 
-head::before, head::after,
-body::before, body::after {
-  position: fixed;
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
   top: 50%;
   left: 50%;
-  width: 3em;
-  height: 3em;
-  content: '.';
-  mix-blend-mode: screen;
-  animation: 44s -27s move infinite ease-in-out alternate;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
-body::before {
-  @include dots(40);
-  animation-duration: 44s;
-  animation-delay: -27s;
-}
-
-body::after {
-  @include dots(40);
-  animation-duration: 43s;
-  animation-delay: -32s;
-}
-
-head::before {
-  @include dots(40);
-  animation-duration: 42s;
-  animation-delay: -23s;
-}
-
-head::after {
-  @include dots(40);
-  animation-duration: 41s;
-  animation-delay: -19s;
+hr {
+  margin: auto;
+  width: 40%;
+  padding-top: 0%;
 }
 
 
-@keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
+/*Waitlist Form Components*/
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+input[type="email"] {
+  width: 120px; /* Adjusted width for text input */
+  padding: 8px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  border: none;
+  background-color: #6d412de6;
+  color: white;
+  width: 90px; /* Adjusted width for submit button */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: -10px;
+}
+
+#submit:hover {
+  background-color: #6d412d;
+}
+
+#submit:active {
+transform: translateY(2px);
+}
+
+
+/*Screen Size Adjustment*/
+
+
+@media only screen and (max-width: 749px) {
+  .bgimg {
+    font-size: 20px;
+  }  
+  .title {
+    font-size: 58px;
+    margin-bottom: 4%;
   }
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px);
+  .topleft img {
+    width: 65px;
+    height: 65px;
   }
 }
-View Compiled
+
+@media only screen and (min-width: 750px) {
+  .bgimg {
+   
+    font-size: 24px;
+  }  
+  .title {
+    font-size: 80px;
+    margin-bottom: 2%;
+  }
+  .topleft img {
+    width: 75px;
+    height: 75px;  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .bgimg {
+    
+    font-size: 30px;
+  }  
+  .title {
+    font-size: 92px;
+    margin-bottom: 0%;
+  }
+  .topleft img {
+    width: 85px;
+    height: 85px;  }
+  
+}
 
 
-Resources1× 0.5× 0.25×Rerun
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {}
