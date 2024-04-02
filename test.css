@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root{
+  --small: 0.5;
+  --medium: 0.8;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -13,7 +18,6 @@ body, html {
   position: relative;
   color: white;
   font-family: "Courier New", Courier, monospace;  
-  font-size: 42px;
   opacity: 100%;
 }  
 
@@ -60,7 +64,7 @@ h4 {
 }
 
 input[type="email"] {
-  width: 120px; /* Adjusted width for text input */
+  width: 120px; 
   padding: 8px;
   margin-top: 24px;
   margin-bottom: 10px;
@@ -70,7 +74,7 @@ input[type="email"] {
   border: none;
   background-color: #6d412de6;
   color: white;
-  width: 90px; /* Adjusted width for submit button */
+  width: 90px; 
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -95,22 +99,30 @@ transform: translateY(2px);
   }  
   .title {
     font-size: 58px;
-    margin-bottom: 4%;
+    margin-bottom: -20px;
   }
   .topleft img {
     width: 65px;
     height: 65px;
   }
+
+  #submit{
+    width: 120px; 
+    margin-left: 0px;
+  }
+
+  #no_mobile {
+    display:none;
+  }
 }
 
 @media only screen and (min-width: 750px) {
   .bgimg {
-   
     font-size: 24px;
   }  
   .title {
     font-size: 80px;
-    margin-bottom: 2%;
+    margin-bottom: 4px;
   }
   .topleft img {
     width: 75px;
@@ -120,12 +132,11 @@ transform: translateY(2px);
 
 @media only screen and (min-width: 900px) {
   .bgimg {
-    
     font-size: 30px;
   }  
   .title {
     font-size: 92px;
-    margin-bottom: 0%;
+    margin-bottom: 0px;
   }
   .topleft img {
     width: 85px;
