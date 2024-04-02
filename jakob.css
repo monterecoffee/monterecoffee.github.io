@@ -107,7 +107,7 @@ input[type="email"] {
 transform: translateY(2px);
 }
 
-//* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .loader {
   width: 40px;
   height: 60px;
