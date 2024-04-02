@@ -12,12 +12,14 @@ body, html {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 150px;
   color: white;
+  margin-top: -3.5%;
 }
 
 .subtitle {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 40px;
   color: white;
+  margin-top: -8.5%;
 }
 
 .main {
