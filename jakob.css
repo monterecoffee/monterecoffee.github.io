@@ -33,13 +33,12 @@ html, body {
 /*Font formatting*/
   .title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 200px;
     color: white;
   }
 
   .h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 250px;
+    font-size: 450px;
     color: white;
   }
 
@@ -86,7 +85,7 @@ html, body {
   }
 
   .logomain {
-    margin-bottom: -25%;
+    margin-bottom: -75px;
   }
 
 /*typing animation LINE 1*/
