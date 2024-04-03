@@ -91,13 +91,11 @@ html, body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #6d412de6; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
-      blink-caret 1s step-end 3.65s;
+      typing 3.5s steps(30, end);
   }
 
   /* The typing effect */
@@ -106,46 +104,26 @@ html, body {
     to { width: 100% }
   }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    0% { border-color: #6d412de6 }
-  }
-
-  @keyframes transparents {
-      from, to { opacity: 100%; }
-      0% { opacity: 0%; }
-  }
-
-/*typing animation LINE 2*/
-  .typewriter2 h1 {
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #6d412de6; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret 1s step-end infinite;
+/*typing animation LINE 1*/
+.typewriter2 h1 {
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end);
     animation-delay: 3.65s;
-    animation-fill-mode: both
-  }
+    animation-fill-mode: both;
+}
 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #6d412de6 }
-  }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 
 /*Waitlist Form Components*/
