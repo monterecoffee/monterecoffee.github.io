@@ -96,6 +96,8 @@ html, body {
     letter-spacing: .10em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(30, end);
+      animation-delay: 0.5s;
+      animation-fill-mode: both;
   }
 
   /* The typing effect */
@@ -115,7 +117,7 @@ html, body {
   letter-spacing: .10em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end);
-    animation-delay: 3.65s;
+    animation-delay: 4.15s;
     animation-fill-mode: both;
 }
 
@@ -146,6 +148,7 @@ html, body {
     border: none;
     background-color: #6d412de6;
     color: white;
+    fill-opacity: 70%;
     width: 90px; 
     padding: 10px;
     margin-bottom: 10px;
