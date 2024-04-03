@@ -39,7 +39,7 @@ html, body {
 
   .h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 150px;
+    font-size: 250px;
     color: white;
   }
 
@@ -85,6 +85,10 @@ html, body {
     padding-top: 0%;
   }
 
+  .logomain {
+    margin-bottom: -25%;
+  }
+
 /*typing animation LINE 1*/
   .typewriter h1 {
     color: #fff;
@@ -108,6 +112,7 @@ html, body {
 
 /*typing animation LINE 1*/
 .typewriter2 h1 {
+  padding-bottom: 20px;
   color: #fff;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 30px;
