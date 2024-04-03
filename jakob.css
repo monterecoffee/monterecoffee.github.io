@@ -11,208 +11,230 @@ html, body {
   height:100%;
 }
 
-/*BACKGROUND SHIT*/
+/*Background animation stuff*/
+  body {
+      background: linear-gradient(120deg, #7d7d7d, #000000, #262626, #6d412de6);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
 
-body {
-    background: linear-gradient(120deg, #7d7d7d, #000000, #262626, #6d412de6);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+/*Font formatting*/
+  .title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 200px;
+    color: white;
+  }
 
-/*BACKGROUND SHIT OVER*/
+  .h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 250px;
+    color: white;
+  }
 
-.title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 150px;
-  color: white;
-  margin-top: -3.5%;
-}
+  .subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    color: white;
+  }
 
-.h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 100px;
-  color: white;
-  margin-top: -3.5%;
-}
+  .main {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8%;
+    color: white;
+  }
 
-.subtitle {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 35px;
-  color: white;
-  margin-top: -8.5%;
-}
+/*Positioning*/
+  .topleft {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+  }
 
-.main {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
-  margin-bottom: 8%;
-  color: white;
-}
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
 
-.topleft {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 10px;
-  left: 10px;
-}
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+  hr {
+    margin: auto;
+    width: 40%;
+    padding-top: 0%;
+  }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .logomain {
+    margin-bottom: -25%;
+  }
 
-hr {
-  margin: auto;
-  width: 40%;
-  padding-top: 0%;
-}
+/*typing animation LINE 1*/
+  .typewriter h1 {
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end);
+      animation-delay: 0.5s;
+      animation-fill-mode: both;
+  }
 
-/*typing animation*/
-.typewriter h1 {
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/*typing animation LINE 1*/
+.typewriter2 h1 {
+  padding-bottom: 20px;
   color: #fff;
   font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #6d412de6; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .10em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret 1s step-end infinite;
+    typing 3.5s steps(30, end);
+    animation-delay: 4.15s;
+    animation-fill-mode: both;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #6d412de6 }
-}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 
 /*Waitlist Form Components*/
 
-h4 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-family: 'Bebas Neue', sans-serif;
-  color: white;
-}
+  h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+  }
 
-input[type="email"] {
-  width: 120px; 
-  padding: 8px;
-  margin-top: 24px;
-  margin-bottom: 10px;
-}
+  input[type="email"] {
+    width: 120px; 
+    padding: 11px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    
+  }
 
-#submit {
-  border: none;
-  background-color: #6d412de6;
-  color: white;
-  width: 90px; 
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  margin-left: 10px;
-}
+  #submit {
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all .5s ease;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+  }
 
-#submit:hover {
-  background-color: #6d412d;
-}
+  #submit:hover {
+    color: #001F3F;
+    background-color: #fff;
+  }
 
-#submit:active {
-transform: translateY(2px);
-}
+  #submit:active {
+  transform: translateY(2px);
+  }
 
 /*scaling stuff DONT DELETE*/
 
-@media only screen and (max-width: 749px) {
-  .bgimg {
-    font-size: 20px;
-  }  
-  .title {
-    font-size: 58px;
-    margin-bottom: -20px;
+  @media only screen and (max-width: 749px) {
+    .bgimg {
+      font-size: 20px;
+    }  
+    .title {
+      font-size: 58px;
+      margin-bottom: -20px;
+    }
+    .topleft img {
+      width: 65px;
+      height: 65px;
+    }
+
+    #submit{
+      width: 120px; 
+      margin-left: 0px;
+    }
+
+    #no_mobile {
+      display:none;
+    }
   }
-  .topleft img {
-    width: 65px;
-    height: 65px;
+
+  @media only screen and (min-width: 750px) {
+    .bgimg {
+      font-size: 24px;
+    }  
+    .title {
+      font-size: 80px;
+      margin-bottom: 4px;
+    }
+    .topleft img {
+      width: 75px;
+      height: 75px;  }
+    
   }
 
-  #submit{
-    width: 120px; 
-    margin-left: 0px;
+  @media only screen and (min-width: 900px) {
+    .bgimg {
+      font-size: 30px;
+    }  
+    .title {
+      font-size: 92px;
+      margin-bottom: 0px;
+    }
+    .topleft img {
+      width: 85px;
+      height: 85px;  }
+    
   }
 
-  #no_mobile {
-    display:none;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  .bgimg {
-    font-size: 24px;
-  }  
-  .title {
-    font-size: 80px;
-    margin-bottom: 4px;
-  }
-  .topleft img {
-    width: 75px;
-    height: 75px;  }
-  
-}
-
-@media only screen and (min-width: 900px) {
-  .bgimg {
-    font-size: 30px;
-  }  
-  .title {
-    font-size: 92px;
-    margin-bottom: 0px;
-  }
-  .topleft img {
-    width: 85px;
-    height: 85px;  }
-  
-}
-
-
-
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {}
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {}
-/* Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {}
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {}
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {}
+    /* Extra small devices (phones, 600px and down) 
+    @media only screen and (max-width: 600px) {}
+    /* Small devices (portrait tablets and large phones, 600px and up) 
+    @media only screen and (min-width: 600px) {}
+    /* Medium devices (landscape tablets, 768px and up) 
+    @media only screen and (min-width: 768px) {}
+    /* Large devices (laptops/desktops, 992px and up) 
+    @media only screen and (min-width: 992px) {}
+    /* Extra large devices (large laptops and desktops, 1200px and up) 
+    @media only screen and (min-width: 1200px) {}
